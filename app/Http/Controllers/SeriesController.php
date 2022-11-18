@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class SeriesController extends Controller
 {
-    public function index() {
+    public function index(Request $request) {
         $series = [
             'The Walking Dead',
             'Breaking Bad',
