@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-class SeriesController
+use Illuminate\Http\Request;
+
+class SeriesController extends Controller
 {
-    public function listarSeries() {
-        
+    public function index() {
         $series = [
             'The Walking Dead',
             'Breaking Bad',
@@ -19,6 +20,5 @@ class SeriesController
         $html .= '</ul>';
 
         echo $html;
-
     }
 }
