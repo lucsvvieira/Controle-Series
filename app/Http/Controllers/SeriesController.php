@@ -13,12 +13,6 @@ class SeriesController extends Controller
             'The Sinner'
         ];
 
-        $html = '<ul>';
-        foreach ($series as $serie) {
-            $html .= "<li>$serie</li>";
-        }
-        $html .= '</ul>';
-
-        echo $html;
+        return view('listar-series', compact('series'));
     }
 }
