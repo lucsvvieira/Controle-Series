@@ -13,6 +13,6 @@ class SeriesController extends Controller
             'The Sinner'
         ];
 
-        return view('listar-series', compact('series'));
+        return view('listar-series')->with('series', $series);
     }
 }
