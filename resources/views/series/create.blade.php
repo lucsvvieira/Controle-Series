@@ -1,8 +1,9 @@
 <x-layout title="Nova Série">
-    <form action="" method="POST">
+    <form action="/series/salvar" method="POST">
+        @csrf
         <div class="mb-3">
-            <label for="nome" class="form-label">Nome:</label>
-            <input type="text" class="form-control" id="nome" name="nome">
+            <label for="name" class="form-label">Nome:</label>
+            <input type="text" class="form-control" id="name" name="name">
         </div>
 
         <button type="submit" class="btn btn-primary">Adicionar</button>
